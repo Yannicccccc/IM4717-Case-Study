@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JavaJam Coffee House - Price Update</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="wrapper">
+	<header>
+		<img src="header.PNG" class="center"/>
+		<script type = "text/javascript" src = "priceUpdate.js"></script>
+  	</header>
+  
+	<div id="leftcolumn">
+  	
+  	</div>
+  
+  	<div id="rightcolumn">
+		<div class="content">
+		<h2>Coffee at JavaJam</h2>
+
+		<form type="post" action="show_post.php" id="menuForm">
+		<table class="price">
+			<tbody>
+			<tr class="price">
+				<td class="price"><input type="checkbox" id="update0" onclick="return openForm(1)"></td>
+				<td class="price" style="text-align: center;"><strong>Just Java</strong></td>
+				<td class="price">Regular house blend, decaffeinated coffee, or flavor of the day.<br>
+					Endless Cup $2.00</td>
+			</tr>
+			<tr class="price">
+				<td class="price"><input type="checkbox" id="update1" onclick="return openForm(2)"></td>
+				<td class="price" style="text-align: center;"><strong>Cafe au Lait</strong></td>
+				<td class="price">House blended coffee infused into a smooth, steamed milk.<br>
+					Single $2.00 Double $3.00 </td>
+			</tr>
+			<tr class="price">
+				<td class="price"><input type="checkbox" id="update2" onclick="return openForm(2)"></td>
+				<td class="price" style="text-align: center;"><strong>Iced Cappuccino</strong></td>
+				<td class="price">Sweet espresso blended with icy-cold milk and served in a chilled glass.<br>
+					Single $4.75 Double $5.75</td>
+			</tr>
+			</tbody>
+		</table>
+		</form>
+		<form>
+			<input type="button" value="back" onclick="window.location.href='menu.html'">
+		</form>	
+		<script type = "text/javascript" src = "priceUpdate.js"></script>
+		</div>
+	</div>  
+
+	<div class="form_popup" id="updateForm1">
+		<form action="priceUpdate.php" class="form_container">
+			<h2>Update Price</h2>  
+			<label for="endless"><b>Endless Cup</b></label>
+			<input type="text" placeholder="Enter New Price" name="endless" required> 
+			<input type="submit" value="Submit" class="btn" onclick="closeForm()"></button>
+			<input type="button" value="cancel" class="btn" onclick="closeForm()"></button>
+		</form>
+	</div>
+
+	<div class="form_popup" id="updateForm2">
+		<form action="priceUpdate.php" class="form_container">
+			<h2>Update Price</h2>  
+			<label for="single1"><b>Single</b></label>
+			<input type="text" placeholder="Enter New Price" name="single1" required> 
+			<label for="double1"><b>Double</b></label>
+			<input type="text" placeholder="Enter New Price" name="double1" required> 
+			<input type="submit" value="Submit" class="btn" onclick="closeForm()"></button>
+			<input type="button" value="cancel" class="btn" onclick="closeForm()"></button>
+		</form>
+	</div>
+
+	<div class="form_popup" id="updateForm3">
+		<form action="priceUpdate.php" class="form_container">
+			<h2>Update Price</h2>  
+			<label for="single2"><b>Single</b></label>
+			<input type="text" placeholder="Enter New Price" name="single2" required> 
+			<label for="double2"><b>Double</b></label>
+			<input type="text" placeholder="Enter New Price" name="double2" required> 
+			<input type="submit" value="Submit" class="btn" onclick="closeForm()"></button>
+			<input type="button" value="cancel" class="btn" onclick="closeForm()"></button>
+		</form>
+	</div>
+  
+  	<footer>
+    	<small><i>Copyright &copy; 2019 JavaJam Coffee House</i></small>
+		<br>
+		<small><i><a href="Jingying@Luo.com">Jingying@Luo.com</a></i></small>
+  	</footer>	
+  
+</div>
+<script type = "text/javascript" src = "priceUpdate.js"></script>
+</body>
+</html>
+
+

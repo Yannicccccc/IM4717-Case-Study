@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JavaJam Coffee House - Jobs</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="wrapper">
+	<header>
+		<img src="header.PNG" class="center"/>
+		<script type = "text/javascript" src = "JobForm_validator.js"></script>	
+  	</header>
+  
+  	<div id="leftcolumn">
+  	<nav>
+   	<ul>
+      	<li><a href="index.html">Home</a></li>
+      	<li><a href="menu.php">Menu</a></li>
+      	<li><a href="music.html">Music</a></li>
+		<li><a href="jobs.html">Jobs</a></li>
+		<li><a href="javascript:admin();">Admin</a></li>
+	</ul>
+  	</nav>	
+  	</div>
+  
+  	<div id="rightcolumn">
+		<div class="content">
+		<h2>Jobs at JavaJam</h2>
+		<p>Want to work at JavaJam? Fill out the form below to start your application. Required fields are marked with an asterisk *</p>	
+	
+		<form type="post" action="show_post.php" id="jobForm">
+		<table class="jobs">
+			<tr class="jobs">
+				<td class="jobs"><label for="myName">*Name:</label></td>
+				<td class="jobs"><input type="text" name="myName" id="myName" onblur="return validateName()"></td>
+			</tr>
+			<tr class="jobs">
+				<td class="jobs"><label for="myEmail">*E-mail:</label></td>
+				<td class="jobs"><input type="email" name="myEmail" id="myEmail" onblur="return validateEmail()"></td>
+			</tr>	
+			<tr class="jobs">
+				<td class="jobs"><label for="myStart">Start Date:</label></td>
+				<td class="jobs"><input type="date" name="myStart" id="myStart" onblur="return validateDate()"></td>
+			</tr>
+			<tr class="jobs">
+				<td class="jobs"><label for="myExperience">*Experience:</label></td>
+				<td class="jobs"><textarea name="myExperience" id="myExperience" rows="2" cols="25" onblur="return validateExperience()" required></textarea></td>
+			</tr>	
+		</table>	
+		<input id="mySubmit" type="submit" value="Apply Now">
+		</form>
+		<script type = "text/javascript" src = "JobForm_validator.js"></script>	
+		</div>
+
+		<div class="form_popup" id="adminForm">
+				<form method="POST" action="show_post.php" class="form_container">
+					<h2>Update Price</h2>  
+					<label for="username"><b>Username</b></label>
+					<input type="text" placeholder="Enter username" name="username" id="acc" required>
+					<label for="password"><b>Password</b></label>
+					<input type="password" placeholder="Enter password" name="password" id="psw" required> 
+					<input type="button" value="submit" class="btn" onclick="validateUser()">
+					<input type="button" value="cancel" class="btn" onclick="closeForm()">
+				</form>
+			</div>
+		  </div>
+  	</div>
+  
+	<footer>
+    	<small><i>Copyright &copy; 2019 JavaJam Coffee House</i></small>
+		<br>
+		<small><i><a href="Jingying@Luo.com">Jingying@Luo.com</a></i></small>
+  	</footer>	
+  
+</div>
+<script type = "text/javascript" src = "JobForm_validator.js"></script>	
+</body>
+</html>
+
+

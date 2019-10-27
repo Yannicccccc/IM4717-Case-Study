@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JavaJam Coffee House - Music</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="wrapper">
+	<header>
+		<img src="header.PNG" class="center"/>
+		<script type = "text/javascript" src = "musicfunction.js"></script>
+  	</header>
+  
+  	<div id="leftcolumn">
+  	<nav>
+    <ul>
+      	<li><a href="index.html">Home</a></li>
+      	<li><a href="menu.php">Menu</a></li>
+      	<li><a href="music.html">Music</a></li>
+		<li><a href="jobs.html">Jobs</a></li>
+		<li><a href="javascript:admin();">Admin</a></li>  
+	</ul>
+  	</nav>	
+  	</div>
+  
+	<div id="rightcolumn">
+		<div class="content">
+		<h2>Music at JavaJam</h2>
+		<p>The first Friday night each month at JavaJam is a special night. Join us from 8pm to 11pm for some music you won't want to miss.</p>
+		<table class="music">
+		<tbody>
+			<tr class="music">
+				<td class="music" colspan="2"><strong>JANUARY</strong></td>
+			</tr>
+			<tr class="music">
+				<td class="music"><img src="south.jpg" class="profile"/></td>
+				<!--image source:https://too-many-ts.backstreetmerch.com/vinyl/south-city-lp-album-->
+				<td class="music">This is a wonderful music! This is a wonderful music! <br>This is a wonderful music! </td>
+			</tr>
+			<tr class="music">
+				<td class="music"></td>
+				<td class="music"><audio controls>
+					<source src="1.mp3" type="audio/mpeg">
+					<!--audio source:https://downloads.khinsider.com/game-soundtracks/album/super-mario-bros/01%2520-%2520Super%2520Mario%2520Bros.mp3-->
+					</audio>
+				</td>
+			</tr>
+
+			<tr class="music">
+				<td class="music" colspan="2"><strong>FEBUARY</strong></td>
+			</tr>
+			<tr class="music">
+				<td class="music"><img src="blue.jpg" class="profile"/></td>
+				<!--image source:https://metalheadz.bandcamp.com/album/metalp015-something-blue-album-->
+				<td class="music">This is another wonderful music! This is another wonderful music! <br>This is another wonderful music! </td>
+			</tr>
+			<tr class="music">
+				<td class="music"></td>
+				<td class="music"><audio controls>
+					<source src="1.mp3" type="audio/mpeg">
+					<!--audio source:https://downloads.khinsider.com/game-soundtracks/album/super-mario-bros/01%2520-%2520Super%2520Mario%2520Bros.mp3-->
+					</audio>
+				</td>
+			</tr>
+		</tbody>
+		</table>
+		</div>
+		<script type = "text/javascript" src = "musicfunction.js"></script>
+
+		<div class="form_popup" id="adminForm">
+				<form method="POST" action="show_post.php" class="form_container">
+					<h2>Update Price</h2>  
+					<label for="username"><b>Username</b></label>
+					<input type="text" placeholder="Enter username" name="username" id="acc" required>
+					<label for="password"><b>Password</b></label>
+					<input type="password" placeholder="Enter password" name="password" id="psw" required> 
+					<input type="button" value="submit" class="btn" onclick="validateUser()">
+					<input type="button" value="cancel" class="btn" onclick="closeForm()">
+				</form>
+			</div>
+		  </div>
+  	</div>
+  
+	<footer>
+    	<small><i>Copyright &copy; 2019 JavaJam Coffee House</i></small>
+		<br>
+		<small><i><a href="Jingying@Luo.com">Jingying@Luo.com</a></i></small>
+  	</footer>	
+ 
+</div>
+</body>
+</html>
+
+

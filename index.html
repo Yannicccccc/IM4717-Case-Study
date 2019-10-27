@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JavaJam Coffee House</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="wrapper">
+    <header>
+		<img src="header.PNG" class="center"/>
+		<script type = "text/javascript" src = "indexfunction.js"></script>
+  	</header>
+  
+  	<div id="leftcolumn">
+  	<nav>
+    <ul>
+      	<li><a href="index.html">Home</a></li>
+      	<li><a href="menu.php">Menu</a></li>
+      	<li><a href="music.html">Music</a></li>
+		<li><a href="jobs.html">Jobs</a></li>
+		<li><a href="javascript:admin();">Admin</a></li>  
+	</ul>
+  	</nav>	
+  	</div>
+  
+  	<div id="rightcolumn">
+    	<div class="content"> 
+		<h2>Follow the Winding Road to JavaJam</h2>
+    	<img src="road.jpg" width="404" height="269" id="floatleft" alt="road"/>
+		<!--image source: https://ourhamilton.co.nz/on-the-move/new-year-road-closure-for-thomas-rd/-->
+		<div id="text">
+		<ul>
+			<li>Specialty Coffee and Tea</li>
+			<li>Bagels, Muffins, and Organic Snacks</li>
+			<li>Music and Poetry Readings</li>
+			<li>Open Mic Night Every Friday</li>
+		</ul>
+		<p class="home">54321 Route 42 <br>
+		Ellison Bay, WI 54210 <br>
+		888-555-5555</p>
+		</div>
+		<script type = "text/javascript" src = "indexfunction.js"></script>
+	</div>
+
+	<div class="form_popup" id="adminForm">
+			<form method="POST" action="show_post.php" class="form_container">
+				<h2>Update Price</h2>  
+				<label for="username"><b>Username</b></label>
+				<input type="text" placeholder="Enter username" name="username" id="acc" required>
+				<label for="password"><b>Password</b></label>
+				<input type="password" placeholder="Enter password" name="password" id="psw" required> 
+				<input type="button" value="submit" class="btn" onclick="validateUser()">
+				<input type="button" value="cancel" class="btn" onclick="closeForm()">
+			</form>
+		</div>
+  	</div>
+  
+  	<footer>
+    	<small><i>Copyright &copy; 2019 JavaJam Coffee House</i></small>
+		<br>
+		<small><i><a href="Jingying@Luo.com">Jingying@Luo.com</a></i></small>
+  	</footer>	
+  
+</div>
+</body>
+</html>
+
+

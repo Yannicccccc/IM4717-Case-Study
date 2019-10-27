@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JavaJam Coffee House - Menu</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="wrapper">
+	<header>
+		<img src="header.PNG" class="center"/>
+		<script type = "text/javascript" src = "menuCalculation.js"></script>
+  	</header>
+  
+	<div id="leftcolumn">
+  	<nav>
+    	<ul>
+      		<li><a href="index.html">Home</a></li>
+      		<li><a href="menu.php">Menu</a></li>
+      		<li><a href="music.html">Music</a></li>
+      		<li><a href="jobs.html">Jobs</a></li>
+		</ul>
+  	</nav>	
+  	</div>
+  
+  	<div id="rightcolumn">
+		<div class="content">
+		<h2>Coffee at JavaJam</h2>
+
+		<form type="post" action="show_post.php" id="menuForm">
+		<table class="menu">
+			<tbody>
+			<tr class="menu">
+				<td class="menu" style="text-align: center;"><strong>Just Java</strong></td>
+				<td class="menu">Regular house blend, decaffeinated coffee, or flavor of the day.<br>
+					<input type="radio" name="coffee0" id="single0" checked> 
+					Endless Cup $2.00
+				</td>
+				<td class="menu">Qtn: <input type="number" name="order0" id="order0" size="4" onkeyup="return updateSingle(0)"></td>
+				<td class="menu">$<input type="text" name="total0" id="total0" size="4" value="0.00" readonly></td>
+			</tr>
+			<tr class="menu">
+				<td class="menu" style="text-align: center;"><strong>Cafe au Lait</strong></td>
+				<td class="menu">House blended coffee infused into a smooth, steamed milk.<br>
+					<input type="radio" name="coffee1" id="single1" onclick="return btnUpdate(1)" checked> 
+					Single $2.00
+					<input type="radio" name="coffee1" id="double1" onclick="return btnUpdate(1)"> 
+					Double $3.00
+				</td>
+				<td class="menu">Qtn: <input type="number" name="order1" id="order1" size="4" onkeyup="return updateSingle(1)"></td>
+				<td class="menu">$<input type="text" name="total1" id="total1" size="4" value="0.00" readonly></td>
+			</tr>
+			<tr class="menu">
+				<td class="menu" style="text-align: center;"><strong>Iced Cappuccino</strong></td>
+				<td class="menu">Sweet espresso blended with icy-cold milk and served in a chilled glass.<br>
+					<input type="radio" name="coffee2" id="single2" onclick="return btnUpdate(2)" checked> 
+					Single $4.75
+					<input type="radio" name="coffee2" id="double2" onclick="return btnUpdate(2)"> 
+					Double $5.75
+				</td>
+				<td class="menu">Qtn: <input type="number" name="order2" id="order2" size="4" onkeyup="return updateSingle(2)"></td>
+				<td class="menu">$<input type="text" name="total2" id="total2" size="4" value="0.00" readonly></td>
+			</tr>	
+			</tbody>
+			<tfoot class="menu">
+			<tr>
+				<td colspan="4">Total: $<input type="text" name="total" id="total" value="0.00" size="8" readonly></td>
+			</tr>	
+			</tfoot>
+		</table>
+		</form>
+		<script type = "text/javascript" src = "menuCalculation.js"></script>
+		<form>
+			<input type="button" value="update" onclick="window.location.href='price.php'"/>
+		</form>	
+		</div>
+  	</div>
+  
+  	<footer>
+    	<small><i>Copyright &copy; 2019 JavaJam Coffee House</i></small>
+		<br>
+		<small><i><a href="Jingying@Luo.com">Jingying@Luo.com</a></i></small>
+  	</footer>	
+  
+</div>
+<script type = "text/javascript" src = "menuCalculation.js"></script>
+</body>
+</html>
+
+
